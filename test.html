@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="css/imagesview.css" /> 
+	<script type="text/javascript" src="js/jquery.js"></script> 
+	<script type="text/javascript" src="js/imagesview.js"></script> 
+    
+
+</head>
+
+<body>
+<div id="nav">
+  <ul>
+    <li><a href="index.html" id="navnormal">执手空间</a></li>
+    <li id="MT-item"><a href="#" id="nava" hidefocus="true" >时尚艺术</a>
+      <div>   
+        <a href="shishangyishu/fashion.html" hidefocus="true">时尚</a>
+        <a href="shishangyishu/Photography.html" hidefocus="true">摄影</a>
+        <a href="shishangyishu/Animal.html" hidefocus="true">动物</a>
+        <a href="shishangyishu/painting.html" hidefocus="true">原画</a>
+        <a href="shishangyishu/Creative.html" hidefocus="true">创意</a>
+        <a href="shishangyishu/design.html" hidefocus="true">平面</a>
+      </div>
+    </li>    
+    <li><a href="wenzhang.html" id="navnormal">文章故事</a></li>
+    <li><a href="happy.html" id="navnormal">开心一下</a></li>
+  </ul>
+</div>
+
+<div id="pictureitem" class="lightBox">
+  <div id="imgbox3" >
+    <a href="picture2/fashion/30.jpg" class="imagesview" title="ImageView"><img src="picture/fashion/30.jpg" /></a>
+    
+    <img src="picture/fashion/12.jpg" width="325" title="12" _src='picture2/fashion/12.jpg'>
+    <img src="picture/fashion/9.jpg" width="325" title="9" _src='picture2/fashion/9.jpg'>
+    <img src="picture/fashion/6.jpg" width="325" title="6" _src='picture2/fashion/6.jpg'>
+    <img src="picture/fashion/3.jpg" width="325" title="3" _src='picture2/fashion/3.jpg'>
+  </div>
+  
+  <div id="imgbox1" >
+    
+    <img src="picture/fashion/11.jpg" width="325" title="11" _src='picture2/fashion/11.jpg'>
+    <img src="picture/fashion/8.jpg" width="325" title="8" _src='picture2/fashion/8.jpg'>
+    <img src="picture/fashion/5.jpg" width="325" title="5" _src='picture2/fashion/5.jpg'>
+    <img src="picture/fashion/2.jpg" width="325" title="2" _src='picture2/fashion/2.jpg'>
+  </div>
+  
+  <div id="imgbox2" >
+    
+    
+    <img src="picture/fashion/10.jpg" width="325" title="10" _src='picture2/fashion/10.jpg'>
+    <img src="picture/fashion/7.jpg" width="325" title="7" _src='picture2/fashion/7.jpg'>
+    <img src="picture/fashion/4.jpg" width="325" title="4" _src='picture2/fashion/4.jpg'>
+    <img src="picture/fashion/1.jpg" width="325" title="1"/ _src='picture2/fashion/1.jpg'>    
+  </div>
+  
+</div>   
+
+<div id="nomore"></div>
+
+
+<div class="xs-tool">
+  <div class="returnTop" style="display: block;"> <a href="javascript:void(0);" title="返回顶部"></a> </div>
+</div>
+<script>
+$(function(){				
+	$(window).scroll(function(){
+		return_top();
+	});
+	//返回顶部
+	function return_top(){
+		if($('body').scrollTop() == 0){
+			$('.returnTop').hide();
+		}else{
+			$('.returnTop').show();
+		}
+	};
+	$('.returnTop').click(function(){
+		$('body').animate({'scrollTop':0},180);
+	});
+	$(window).scroll();
+    
+});
+</script>
+
+  
+</body>
+</html>
